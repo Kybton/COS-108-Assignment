@@ -1,0 +1,334 @@
+/* Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --white: #FFFBFF;
+    --dutch-white: #F1DABF;
+
+    --black: #04030F;
+
+    --grey: #92817A;
+
+    --dark-grey: #362417;
+
+    --taupe-gray: #8e9189;
+    --purple: #494449;
+    --metallic: #857f74;
+    --isabelline: #eeefeb;
+    --spring: #ddeac1;
+
+    --background: var(--black);
+    --foreground: var(--spring);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body button {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.base-container {
+    display: block;
+}
+
+.nav-bar {
+    width: auto;
+    color: var(--foreground);
+    background-color: var(--background);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem 5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: 3rem;
+}
+
+.nav-bar-list a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-bar-list button {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 3rem;
+    padding: 0.5rem 0.5rem;
+    border-width: 0 0 0.15rem 0;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.nav-bar-list button:hover {
+    transition: 0.8s;
+    border-color: var(--spring);
+    color: var(--spring)
+}
+
+.home {
+    height: 90vh;
+    display: flex;
+    background-image: url("../images/good-food-home.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: left;
+    color: var(--white);
+}
+
+.home div {
+    padding-left: 6rem;
+}
+
+.home h2 {
+    padding: 0.6rem 1rem;
+    font-size: 2rem;
+    background-color: var(--black);
+}
+
+.home button {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    color: var(--black);
+    background-color: var(--spring);
+    text-decoration: none;
+    border: none;
+}
+
+.home button:hover {
+    transition: all 1.2s;
+    background-color: var(--purple);
+    color: var(--spring);
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    background-color: var(--isabelline);
+    justify-content: center;
+}
+
+#menu-container {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#menu-container h1 {
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--spring);
+}
+
+.menu-item {
+    border: 2px solid var(--black);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin: 0;
+    width: 100%;
+    padding-right: auto;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    background-color: var(--black);
+    color: var(--spring);
+}
+
+.menu-item p {
+    font-size: 0.8rem;
+}
+
+.order-form {
+    background-color: var(--isabelline);
+    width: auto;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-bottom: 9rem;
+    padding-top: 5rem;
+}
+
+.order-form h1 {
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--spring);
+}
+
+.order-form form {
+    width: 50vh;
+}
+
+.form-button {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    color: var(--spring);
+    background-color: var(--metallic);
+    text-decoration: none;
+    border: none;
+}
+
+.form-button:hover {
+    transition: all 1.2s;
+    background-color: var(--black);
+    color: var(--spring);
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+#foodDropdown {
+    font-family: 'Merriweather Sans', sans-serif;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.orders {
+    width: 100%;
+    display: flex;
+    background-color: var(--isabelline);
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+#order-container {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+#order-container h1 {
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--spring);
+}
+
+.order-item {
+    border: 2px solid var(--black);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.order-item h3 {
+    margin: 0;
+    width: 100%;
+    padding-right: auto;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    background-color: var(--black);
+    color: var(--spring);
+}
+
+.order-item p {
+    font-size: 0.8rem;
+}
+
+.food-form {
+    background-color: var(--isabelline);
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-bottom: 9rem;
+    padding-top: 2rem;
+}
+
+.food-form h1 {
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--spring);
+}
+
+.login-container {
+    background-color: var(--black);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: var(--isabelline);
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-bottom: 9rem;
+    padding-top: 5rem;
+}
+
+.footer {
+    background-color: var(--purple);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer span {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    font-size: 0.7rem;
+    margin: 1rem 0 0.4rem 0;
+    padding: 0;
+}
